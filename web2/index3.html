@@ -1,0 +1,127 @@
+
+<!DOCTYPE html>
+<html >
+    <link  rel=stylesheet
+    type="text/css"
+    href="responsive.css">
+<head >
+    <title >MK Wiki</title>
+    </head>
+    
+<style >
+    .cine {
+        display:block;
+        margin: auto;
+        width: 100%;
+        height: 585px;
+        border: 5px;
+    }
+    </style>
+    <script>
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
+</script>
+<body>
+    <div class="header"><h1 >Mortal Kombat Wiki</h1>
+       <div class="nav">
+        <ul >
+            <li ><a target= blank_ href="https://en.wikipedia.org/wiki/Mortal_Kombat#Characters">Characters</a></li>
+            
+            <li ><a target= blank_ href="https://mortalkombat.fandom.com/wiki/Mortal_Kombat_Arenas">Arenas</a></li>
+            
+            <li><a target= blank_ href="https://en.wikipedia.org/wiki/Mortal_Kombat#Storyline">Lore</a></li>
+            
+            <li class="rightli" style="float:right"> <a href="">Contact</a>
+            </li>
+        </ul>
+        </div>
+    </div>
+
+ 
+    <div  class="main">
+         <div class="slideshow-container">
+            <div class="mySlides fade">
+                <div class="numbertext">1 / 3</div>
+                    <img src="scorpionss.jfif" alt="" class="cine">
+                <div class="text">Caption Text</div>
+            </div>
+
+            <div class="mySlides fade">
+            <div class="numbertext">2 / 3</div>
+                <img src="kombat-pack-trailer-bg.jpg" alt="" class="cine">
+            <div class="text">Caption Two</div>
+            </div>
+
+            <div class="mySlides fade">
+                <div class="numbertext">3 / 3</div>
+                    <img src="8z6cfjlnr6f21.jpg" alt="" class="cine">
+                <div class="text">Caption Three</div>
+            </div>
+             <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+             <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        </div>
+                <br>
+
+
+        <div style="text-align:center">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+        </div>
+        
+        
+        </div>
+        
+<div class= "main2">   
+<div class= "image_gallery">   
+    <div  class="gallery">
+      <a target="_blank" href="https://en.wikipedia.org/wiki/Mortal_Kombat#Characters">
+        <img src="https://1.bp.blogspot.com/-fdsQeSoYsX8/XOmPI5KVJII/AAAAAAAAAjs/vwmdQbnEzDgl9LQa9WIOA_kQRbE2zf9gQCEwYBhgL/s1600/MK11%2BSelection.jpg" alt="Scorpion" width="400" height="250">
+      </a>
+        <div class="desc"><m1 >Characters</m1></div>
+    </div>
+    
+    <div  class="gallery">
+      <a target="_blank" href="https://mortalkombat.fandom.com/wiki/Mortal_Kombat_Arenas">
+        <img src="https://news-cdn.softpedia.com/images/news2/Mortal-Kombat-X-Nails-the-Balance-Between-Innovation-and-Old-Features-478503-6.jpg" alt="Arenas" width="400" height="250">
+      </a>
+        <div class="desc">Arenas</div>
+    </div>
+    
+    <div  class="gallery">
+      <a target="_blank" href="https://en.wikipedia.org/wiki/Mortal_Kombat#Storyline">
+        <img src="https://www.dccomics.com/sites/default/files/GalleryComics_1920x1080_20151014_MKX_V2_560c38028a7b32.17609244.jpg" alt="Lore" width="400" height="250">
+      </a>
+        <div class="desc">Lore</div>
+    </div>
+</div>
+    </div>
+    <div class="footer"><font color="white">c</font>
+    </div>
+    
+    </body>
+</html>
